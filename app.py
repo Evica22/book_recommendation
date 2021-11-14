@@ -31,7 +31,7 @@ def Recommend():
   predictions = svd_recommendation(Tittle_ref =title, Author_ref = author, include=True)
   predictions = predictions.drop(['corr'], axis=1)
   predictions.index = np.arange(1, len(predictions)+1)
-  return render_template('index.html',prediction=predictions)
+  return render_template('response.html',prediction=predictions)
 
 if __name__ == '__main__':
     app.run(debug=True)
