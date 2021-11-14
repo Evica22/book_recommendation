@@ -12,9 +12,8 @@
         <input type="text", name="author", placeholder="Book Author" /><br>
 
         <button type="submit" method="get" class="btn btn-primary btn-block btn-large">Recommend</button>
-        
-         <h1> Recommended books:</h1>
-        {{ prediction.to_html(classes="table table-striped") | safe }}
       </form>
+        <h1> Recommended books:</h1>
+        {{ prediction.to_html(classes="table table-striped") | safe }}
   </body>
 </html>
