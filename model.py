@@ -18,15 +18,9 @@ from scipy.sparse import csr_matrix
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
-import os
-
-path="C:/Users/cnb/Desktop/datasentics"
-os.chdir(path)
-
 pd.set_option('display.max_columns', None)
 pd.set_option('display.expand_frame_repr', False)
 pd.set_option('max_colwidth', -1)
-
 
 df_all = pd.read_csv("df_all.csv")
 ######################################################################################################
