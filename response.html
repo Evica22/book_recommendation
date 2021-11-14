@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Book Recommendation App</title>
+  </head>
+  <body>
+    <div class="login">
+        <h1> Recommended books:</h1>
+        {{ prediction.to_html(classes="table table-striped") | safe }}
+  </body>
+</html>
