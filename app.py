@@ -4,17 +4,11 @@ Created on Sun Nov 14 14:02:32 2021
 
 @author: 
 """
-
-#svd_recommendation(Tittle_ref = title, Author_ref = author, ISBN=isbn)
-
 from flask import Flask, request, url_for, redirect, render_template, jsonify 
 import pickle
 import os
 import numpy as np
 import pandas as pd
-
-path="C:/Users/cnb/Desktop/datasentics"
-os.chdir(path)
 
 #import model
 from model import svd_recommendation 
